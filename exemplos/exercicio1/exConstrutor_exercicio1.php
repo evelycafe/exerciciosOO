@@ -5,6 +5,8 @@
 		<title>Exercicio 1</title>
 	</head>
 	<body>
+		<?php include "cabecalho.php" ?>
+		
 		<form method="post" action="exConstrutor_exibe1.php">
 			<fieldset>
 				<input type="text" name="nome" placeholder="Digite o nome..." /><br/><br/>
