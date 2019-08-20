@@ -9,7 +9,7 @@
 	<body>
 	<?php
 		
-		include("classeSecretario.php");
+		include("classeAluno.php");
 		session_start();
 		include("cabecalho.php");
 		
@@ -22,13 +22,14 @@
 				<th>Telefone</th>
 				<th>Sexo</th>
 				<th>Idade</th>
-				<th>Salario</th>
+				<th>Matrícula</th>
+				<th>Nota</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php
-				foreach($_SESSION["secretario"] as $i=>$s){
-					$s->exibe_tr();
+				foreach($_SESSION["aluno"] as $i=>$a){
+					$a->exibe_tr();
 				}
 			?>
 		</tbody>

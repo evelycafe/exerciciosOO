@@ -2,18 +2,22 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Heranca</title>
+		<style>
+			input{margin:5px;}
+		</style>
 	</head>
 	<body>
-		<?php include "cabecalho.php"; ?>
-		
-		<form method="post" action="cadastra_secretario.php">
-		
-			<?php include "form_pessoa.php"; ?>
-
-				Salário: <input type="text" name="salario" /><br/><br/>
+	<?php
+		include("cabecalho.php");
+	?>
+		<form method="post" action="cadastro_secretario.php">
+			<?php include "form_pessoa.php";?>
+			
+			<input type="number" name="salario" 
+				placeholder="salario..." />
 				
-				<input type="submit" value="Cadastrar" />
+			<input type="submit" value="cadastrar" /> <br />	
+			
 		</form>
 	</body>
 </html>

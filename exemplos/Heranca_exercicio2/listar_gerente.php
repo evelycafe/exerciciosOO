@@ -9,26 +9,33 @@
 	<body>
 	<?php
 		
-		include("classeSecretario.php");
+		include("classeGerente.php");
+		
 		session_start();
+		
 		include("cabecalho.php");
 		
 	?>
 	<table border='1'>
 		<thead>
 			<tr>
+				<th>CPF</th>
 				<th>Nome</th>
 				<th>Email</th>
-				<th>Telefone</th>
 				<th>Sexo</th>
-				<th>Idade</th>
-				<th>Salario</th>
+				<th>Data Nasc</th>
+				<th>Endereco</th>
+				<th>Cidade</th>
+				<th>Estado</th>
+				<th>País</th>
+				<th>Área</th>
+				<th>Salário</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php
-				foreach($_SESSION["secretario"] as $i=>$s){
-					$s->exibe_tr();
+				foreach($_SESSION["gerente"] as $i=>$g){
+					$g->exibe_tr();
 				}
 			?>
 		</tbody>
